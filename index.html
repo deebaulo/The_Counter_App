@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Counter App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section>
+        <div class="container">
+            <div class="app-panel">
+                <div>
+                    <h1>The Counter App</h1>
+                    <p>Tracking People Coming In and Out</p>
+                </div>
+
+            <div class="row"> 
+                <div class="col">
+                    <div class="in">Entered:</div>
+                    <div id="counting">0</div>
+                    <button id="count-btn" onclick="enterExit()">Count</button>
+                    <button id="save-btn" onclick="save()">Save</button>
+                    <p id="record-el">Previous entries: </p>
+        
+                </div>
+
+                <div class="col-2">
+                    <div class="out">Exited:</div>
+                    <div id="counting-2">0</div>
+                    <button id="count-btn" onclick="exitEnter()">Count</button>
+                    <button id="save-btn" onclick="saving()">Save</button>
+                    <p id="record-2">Previous exits: </p>
+                </div>   
+            </div>
+            </div>
+        </div>
+    </section>
+    <footer>© 2023 The Counter App. All rights reserved. Coded by Dee Baulo</footer>
+    <script src="index.js"></script>
+    <script src="out.js"></script>
+</body>
+</html>
